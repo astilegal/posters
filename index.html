@@ -133,5 +133,11 @@
             <div class="poster-title">Property Investment Strategies</div>
         </div>
     </div>
+    <script>
+  fetch('https://advcounter.onrender.com/increment')
+    .then(response => response.json())
+    .then(data => console.log('View count incremented:', data.views))
+    .catch(error => console.error('Error incrementing view count:', error));
+</script>
 </body>
 </html>
