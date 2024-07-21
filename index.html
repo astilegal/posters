@@ -134,9 +134,9 @@
         </div>
     </div>
     <script>
-  fetch('https://advcounter.onrender.com/increment')
+  fetch('https://advcounter.onrender.com/increment', { method: 'POST' })
     .then(response => response.json())
-    .then(data => console.log('View count incremented:', data.views))
+    .then(data => console.log('View count incremented:', data))
     .catch(error => console.error('Error incrementing view count:', error));
 </script>
 </body>
