@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.67">
+    <title>Āsti Property Contract Consultancy - Modern Poster</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ecf0f1;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .poster {
+            width: 80%;
+            max-width: 1000px;
+            background: linear-gradient(to bottom right, #1e272e, #2f3542);
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+            border-radius: 20px;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto 1fr auto;
+            padding: 30px;
+            height: 100%;
+        }
+
+        .header {
+            grid-column: 1 / -1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f39c12;
+            padding-bottom: 10px;
+        }
+
+        .logo {
+            font-size: 110px;
+            font-weight: 700;
+            color: #f39c12;
+        }
+
+        .tagline {
+            font-size: 24px;
+            font-weight: 300;
+            text-align: right;
+            color: #f1c40f;
+        }
+
+        .main-content {
+            grid-column: 1 / -1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .info-box {
+            width: 60%;
+        }
+
+        .info-box h2 {
+            font-size: 34px;
+            color: #f39c12;
+            margin-bottom: 20px;
+        }
+
+        .info-box ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .info-box li {
+            font-size: 20px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .info-box li::before {
+            content: '✓';
+            color: #1abc9c;
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .qr-code {
+            width: 180px;
+            height: 180px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            border-radius: 15px;
+        }
+
+        .qr-code img {
+            width: 90%;
+            height: auto;
+        }
+
+        .footer {
+            grid-column: 1 / -1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .contact {
+            font-size: 18px;
+        }
+
+        .cities {
+            font-size: 18px;
+            color: #1abc9c;
+        }
+
+        .accent-shape {
+            position: absolute;
+            background-color: #f39c12;
+            opacity: 0.2;
+        }
+
+        .shape1 {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            top: -60px;
+            right: -60px;
+        }
+
+        .shape2 {
+            width: 200px;
+            height: 200px;
+            bottom: -50px;
+            left: -50px;
+            transform: rotate(45deg);
+        }
+
+        @media (max-width: 1000px) {
+            .poster {
+                width: 90%;
+                height: auto;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .logo {
+                font-size: 90px;
+            }
+
+            .tagline {
+                font-size: 20px;
+            }
+
+            .info-box h2 {
+                font-size: 28px;
+            }
+
+            .info-box li {
+                font-size: 18px;
+            }
+
+            .qr-code {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="poster">
+        <div class="accent-shape shape1"></div>
+        <div class="accent-shape shape2"></div>
+        <div class="content">
+            <header class="header">
+                <div class="logo">Āsti</div>
+                <div class="tagline">
+                    Revolutionizing<br>Property Contracts
+                </div>
+            </header>
+            <div class="main-content">
+                <div class="info-box">
+                    <h2>Our Services</h2>
+                    <ul>
+                        <li>Expert Contract Drafting</li>
+                        <li>Thorough Document Verification</li>
+                        <li>Comprehensive Legal Consultation</li>
+                        <li>Innovative Property Solutions</li>
+                    </ul>
+                </div>
+                <div class="qr-code">
+                    <img src="qr.png" alt="Scan for Premium Consultation">
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="contact">
+                    📞 7899082917 | 7676405656<br>
+                    📧 astilegal@gmail.com
+                </div>
+                <div class="cities">
+                    BENGALURU | NAGPUR
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

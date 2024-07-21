@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.3">
+    <title>Āsti Property Contract Consultancy - Professional Poster</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #ffffff;
+            --accent-color: #ffd700;
+            --text-color: #333333;
+            --background-color: #f0f0f0;
+        }
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--background-color);
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .poster {
+            width: 90vmin;
+            height: 90vmin;
+            max-width: 1080px;
+            max-height: 1080px;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .poster::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            opacity: 0.1;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .logo {
+            font-size: 72px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .tagline {
+            font-size: 22px;
+            color: var(--text-color);
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .services {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .service {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .cta {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            font-size: 22px;
+            font-weight: 700;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .cta:hover {
+            background-color: #e6c200;
+            transform: scale(1.05);
+        }
+        
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+            border-top: 2px solid var(--primary-color);
+            padding-top: 20px;
+        }
+        
+        .contact, .cities {
+            line-height: 1.8;
+        }
+        
+        .contact span, .cities span {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        
+        @media (max-width: 768px) {
+            .poster {
+                padding: 30px;
+            }
+            
+            .logo {
+                font-size: 56px;
+            }
+            
+            .tagline {
+                font-size: 18px;
+            }
+            
+            .services {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .contact, .cities {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="poster">
+        <header class="header">
+            <h1 class="logo">Āsti</h1>
+            <p class="tagline">Expert Property Contract Consultancy</p>
+        </header>
+        
+        <main class="content">
+            <div class="services">
+                <div class="service">Contract Drafting</div>
+                <div class="service">Document Verification</div>
+                <div class="service">Legal Consultation</div>
+                <div class="service">Property Solutions</div>
+            </div>
+            <div class="cta">Book Your Consultation Today</div>
+        </main>
+        
+        <footer class="footer">
+            <div class="contact">
+                <p><span>Phone:</span> +91 7899082917 | +91 7676405656</p>
+                <p><span>Email:</span> astilegal@gmail.com</p>
+            </div>
+            <div class="cities">
+                <p><span>Locations:</span></p>
+                <p>Bengaluru | Nagpur</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
